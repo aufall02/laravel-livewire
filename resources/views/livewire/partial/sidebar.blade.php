@@ -22,13 +22,13 @@
         <h2 class="menu-title">Data master</h2>
         <ul>
             <li>
-                <a href="" @class(['active' => false]) wire:navigate>
+                <a href="{{route('menu.index')}}" @class(['active' => Route::is('menu.index')]) wire:navigate>
                     <x-tabler-layout-grid-add size='5' />
                     <span>Menu makana</span>
                 </a>
             </li>
             <li>
-                <a href="" @class(['active' => false]) wire:navigate>
+                <a href="{{route('customer.index')}}" @class(['active' => Route::is('customer.index')]) wire:navigate>
                     <x-tabler-users size='5' />
                     <span>Data customer</span>
                 </a>
