@@ -14,7 +14,6 @@
         <div class="drawer lg:drawer-open">
             <input id="drawer" type="checkbox" class="drawer-toggle" />
             <div class="drawer-content">
-                <!-- Page content here -->
                 @livewire('partial.navbar')
                 {{ $slot }}
             </div>
